@@ -1,0 +1,10 @@
+spawn-locations:
+- world: world
+  x: -897
+  y: 210
+  z: 273
+- world: world
+  x: -896
+  y: 210
+  z: 270
+#...
