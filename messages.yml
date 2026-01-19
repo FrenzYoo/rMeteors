@@ -1,0 +1,76 @@
+# ========================================
+#           rMeteors Messages
+# ========================================
+# All plugin messages are configurable here.
+# Use & for color codes. Placeholders are listed for each message.
+
+# Plugin prefix (appears before most messages)
+prefix: "&8[&6rMeteors&8] &7"
+
+# Event Messages
+event:
+  # Broadcast when meteor shower begins
+  start: "&e☄ &6A Meteor Shower has begun! &eMeteors are falling from the sky!"
+  # Broadcast when meteor shower ends (time expires)
+  end: "&7The Meteor Shower has ended."
+  # Broadcast when all stones are destroyed (event ends early)
+  # This replaces "0 stones remaining" message
+  ended: "&7Event has ended."
+  # Announcement for how many meteors have landed - Placeholder: %count%
+  meteors-landed: "&e☄ &6%count% meteors have landed!"
+  # Message shown when event is currently active (for placeholder)
+  currently-active: "&a&lCurrently Available!"
+
+# Stone Messages
+stone:
+  # When a player tries to hit a stone owned by another player - Placeholders: %owner%, %time%
+  owned: "&cThis stone is owned by %owner% for %time%s!"
+  # When a player claims a stone - Placeholder: %time%
+  claimed: "&aYou claimed this Core Stone for %time% seconds!"
+  # When stone ownership expires (set to empty to disable)
+  free: ""
+  # When a player destroys a core stone
+  destroyed: "&a&l★ &aYou destroyed the Core Stone! &7Rewards collected!"
+  # Broadcast when a player breaks a stone - Placeholders: %player%, %remaining%
+  broken-broadcast: "&e%player% &7broke a stone! &f%remaining% &7stones remaining."
+  # Message when player tries to claim a second stone (when allow-multiple-ownership is false)
+  already-owns: "&cYou already own a Core Stone! Destroy it first before claiming another."
+
+# Countdown Messages
+countdown:
+  # Countdown announcement before event - Placeholder: %time%
+  message: "&6&l⚡ &eMeteor Shower starting in &6%time%&e!"
+
+# Permission Messages
+permission:
+  no-permission: "&cYou don't have permission to do that."
+
+# Command Messages
+command:
+  reload-success: "&aConfiguration reloaded successfully!"
+  event-already-running: "&cAn event is already running!"
+  no-event-running: "&cNo event is currently running."
+  event-started: "&aMeteor event started!"
+  event-stopped: "&cEvent stopped and all stones cleared."
+  # Location commands
+  player-only: "&cThis command can only be used by players!"
+  no-spawn-locations: "&cNo spawn locations defined! Use /rmeteors addloc first."
+  location-added: "&aSpawn location #%count% added at &e%x%, %y%, %z% &ain world &e%world%"
+  location-removed: "&aRemoved nearest spawn location."
+  location-removed-number: "&aSpawn location #%number% removed."
+  no-location-nearby: "&cNo spawn location found within 10 blocks."
+  invalid-location-number: "&cInvalid location number."
+  invalid-number-format: "&cInvalid number format."
+  no-locations-defined: "&7No spawn locations defined."
+  locations-cleared: "&aAll spawn locations cleared."
+
+# Hologram Formats (displayed above stones)
+hologram:
+  # Name line format - Placeholder: %name%
+  name-format: "%name%"
+  # HP line format - Placeholders: %hp%, %max_hp%, %percentage%
+  hp-format: "&c❤ %hp%/%max_hp% HP"
+  # Owner line when stone is claimed - Placeholders: %owner%, %time%
+  owner-format: "&6⚔ %owner% &7(%time%s)"
+  # Line when stone has no owner
+  no-owner-format: "&7⚔ This stone has no owner"
