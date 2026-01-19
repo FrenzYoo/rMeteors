@@ -1,17 +1,5 @@
 # rMeteors
 
-## 🎬 Preview
-
-### 📍 Location Setup
-
-![Location Setup](startgif.gif)
-
-### ☄️ Meteor Event Start
-
-![Meteor Event](locgif.gif)
-
-rMeteors is an advanced, event-based Minecraft plugin that introduces scheduled meteor shower events with fully configurable mechanics, locations, rewards, and visuals. It is designed to feel vanilla-friendly while adding competitive and engaging gameplay to your server.
-
 ---
 
 ---
@@ -56,6 +44,7 @@ rMeteors is an advanced, event-based Minecraft plugin that introduces scheduled 
 **Aliases:** `/rm`, `/meteor`
 , `/meteor`
 
+-------|-------------|
 | `/rmeteors editor` | Enables editor mode to define spawn locations |
 | `/rmeteors start` | Starts the meteor event |
 | `/rmeteors stop` | Stops the event and removes all stones |
