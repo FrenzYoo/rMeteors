@@ -1,65 +1,40 @@
 # rMeteors
 
+## 🎬 Preview
+
+### 📍 Location Setup
+
+![Location Setup](startgif.gif)
+
+### ☄️ Meteor Event Start
+
+![Meteor Event](locgif.gif)
+
 rMeteors is an advanced, event-based Minecraft plugin that introduces scheduled meteor shower events with fully configurable mechanics, locations, rewards, and visuals. It is designed to feel vanilla-friendly while adding competitive and engaging gameplay to your server.
+
+---
 
 ---
 
 ## ✨ Features
 
 * ⏰ **Scheduled Events**
-  Start events at specific times (e.g. 18:00, 20:00, 21:00) or disable scheduling entirely.
+  Start events at specific times (e.g. 18:00, 20:00, 21:00) or manually via command. Scheduled starts can be enabled or disabled from `config.yml`.
+
+* ⏳ **Countdown System**
+  A configurable countdown runs before the event starts. Messages and timings (e.g. 10m, 5m, 1m, 30s, 10s, 5s, 3s, 2s, 1s) are fully customizable.
+
+* 🧩 **Placeholder Support**
+  Use the placeholder `%rmeteors_countdown%` to display the remaining countdown time in scoreboards, holograms, or other supported plugins.
 
 * 🛠️ **Editor-Based Locations**
-  Admins define exact spawn locations using an editor command. All locations are saved to `data.yml` (world + coordinates).
+  Admins define exact spawn locations using editor commands. All locations are saved to `data.yml` (world + coordinates).
 
 * ☄️ **Simultaneous Meteor Spawns**
   When the event starts, meteors land at all defined locations at the same time.
 
 * 🪨 **Layer Stone System**
   A Layer Stone spawns under each meteor block. Players cannot break Layer Stones, and they are removed automatically when the event ends or when the stone above is broken.
-
-* 🧱 **Custom Core Stones**
-
-  * Multiple block types supported
-  * Each block has its own HP, rewards, and drop chances
-  * Probability-based spawning (e.g. 40% / 60%)
-
-* ⚒️ **Vanilla-Style Mining**
-
-  * Stones spawn with full HP
-  * Broken normally like Survival mode blocks
-  * No creative-style instant breaking
-  * Each successful block break removes exactly **1 HP**, regardless of tool
-
-* 👑 **Ownership System**
-
-  * First player to damage a stone becomes its owner
-  * Ownership timer resets to 20 seconds on every hit
-  * If the timer reaches 0, the stone has no owner
-
-* 📊 **Hologram & Action Bar Support**
-
-  * Displays stone name, remaining HP, and owner
-  * Countdown updates every second
-  * Fully configurable messages
-  * Can be enabled or disabled via `config.yml`
-  * Supports:
-
-    * FancyHolograms
-    * DecentHolograms
-    * HolographicDisplays
-
-* 💬 **Rich Chat Messages**
-
-  * Event start & end messages
-  * Countdown announcements before start
-  * Player break messages (e.g. "Player X broke a stone, Y remaining")
-
-* ⏳ **Event Duration**
-
-  * Default: 5 minutes (configurable)
-  * All stones are automatically removed when the event ends
-  * `stop` command force-ends the event and removes all stones
 
 ---
 
@@ -81,7 +56,6 @@ rMeteors is an advanced, event-based Minecraft plugin that introduces scheduled 
 **Aliases:** `/rm`, `/meteor`
 , `/meteor`
 
--------|-------------|
 | `/rmeteors editor` | Enables editor mode to define spawn locations |
 | `/rmeteors start` | Starts the meteor event |
 | `/rmeteors stop` | Stops the event and removes all stones |
