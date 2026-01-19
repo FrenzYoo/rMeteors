@@ -1,0 +1,112 @@
+# ========================================
+#           rMeteors Configuration
+# ========================================
+# All messages are now in messages.yml
+# Timer placeholder: %rmeteors_countdown%
+
+# Event Settings
+event:
+  # Event duration in minutes (blocks auto-removed when time expires)
+  duration: 5
+  
+  # Scheduled event times (24-hour format)
+  # Set enabled to false to disable automatic scheduled events
+  schedule:
+    enabled: true
+    times:
+      - "18:00"
+      - "20:00"
+      - "21:00"
+  
+  # Countdown announcements before event starts
+  countdown:
+    enabled: true
+    # Supported formats: Xm (minutes), Xs (seconds)
+    announcements:
+      - "10m"
+      - "5m"
+      - "1m"
+      - "30s"
+      - "10s"
+      - "5s"
+      - "3s"
+      - "2s"
+      - "1s"
+    # Time format suffixes (customizable)
+    time-format:
+      hours: "h"
+      minutes: "m"
+      seconds: "s"
+
+# Core Stone Types (multiple blocks with different HP, rewards, and probability)
+stone-types:
+  common:
+    display-name: "&fCommon Stone"
+    block: OBSIDIAN
+    hp: 150
+    chance: 60  # 60% chance
+    rewards:
+      - "ITEM:IRON_INGOT:5"
+      - "ITEM:GOLD_INGOT:3"
+      - "COMMAND:eco give %player% 2000"
+      - "MESSAGE:&7You broke a &fCommon Core Stone!"
+  rare:
+    display-name: "&9Rare Stone"
+    block: CRYING_OBSIDIAN
+    hp: 250
+    chance: 30  
+    rewards:
+      - "ITEM:DIAMOND:3"
+      - "ITEM:EMERALD:5"
+      - "MESSAGE:&bYou broke a &9Rare Core Stone!"
+  legendary:
+    display-name: "&6&lLegendary Stone"
+    block: ANCIENT_DEBRIS
+    hp: 400
+    chance: 10  
+    rewards:
+      - "ITEM:NETHERITE_INGOT:1"
+      - "ITEM:DIAMOND:10"
+      - "COMMAND:give %player% netherite_scrap 2"
+      - "MESSAGE:&6&l★ You broke a &e&lLEGENDARY &6&lCore Stone! ★"
+
+# Core Stone Settings
+core-stone:
+  # Ownership duration in seconds
+  ownership-duration: 20
+  # Layer stone that spawns underneath the core stone
+  layer-stone: BEDROCK
+  # Allow players to own multiple stones at the same time
+  # If false, players can only claim one stone at a time
+  allow-multiple-ownership: false
+
+# Hologram Settings
+hologram:
+  enabled: true
+  # Hologram text formats are now in messages.yml
+
+# Action Bar Settings
+action-bar:
+  enabled: true
+  format: "%bar% %hp%&7/&f%max_hp% HP &c-%damage%"
+  bar-char: "▌"
+  bar-length: 20
+  color-high: "&a"
+  color-medium: "&e"
+  color-low: "&c"
+  color-empty: "&7"
+
+# Effects
+effects:
+  enabled: true
+  
+  continuous-meteor:
+    enabled: true
+    particle: FLAME
+    interval-ticks: 5
+  
+  meteor-trail: FLAME
+  impact-particles: EXPLOSION
+  hit-particles: BLOCK
+  destroy-particles: TOTEM_OF_UNDYING
+  sounds-enabled: true
