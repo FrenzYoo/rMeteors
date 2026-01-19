@@ -44,11 +44,13 @@
 **Aliases:** `/rm`, `/meteor`
 , `/meteor`
 
--------|-------------|
+| Command | Description |
+|-------|-------------|
 | `/rmeteors editor` | Enables editor mode to define spawn locations |
 | `/rmeteors start` | Starts the meteor event |
 | `/rmeteors stop` | Stops the event and removes all stones |
 | `/rmeteors reload` | Reloads config and data files |
+
 
 ---
 
